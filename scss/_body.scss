@@ -1,0 +1,139 @@
+/********* BODY ***********/
+
+body {
+  background-color: rgb(158, 126, 189);
+}
+
+.padreGrid {
+  background-color: $color-blue;
+  img {
+    width: 100%;
+    &:hover {
+      transform: scale(0.9);
+      border: 2px solid $color-black;
+      border-radius: 10px;
+      box-shadow: 4px 4px white;
+      transition: 1s;
+    }
+  }
+}
+
+.section1 {
+  border: solid $color-black 3px;
+  background-color: brown;
+  background-repeat: no-repeat;
+  background-size: 3vw 8vh;
+  opacity: 5.5;
+}
+.section2 {
+  border: solid $color-black 3px;
+  background-color: cornflowerblue;
+  background-repeat: no-repeat;
+  background-size: 3vw 8vh;
+  opacity: 5.5;
+}
+.section3 {
+  border: solid $color-black 3px;
+  background-color: rgb(115, 189, 115);
+  background-repeat: no-repeat;
+  background-size: 3vw 8vh;
+  opacity: 5.5;
+}
+
+.gridPadreMul {
+  background-color: $color-blue;
+
+  .cancion {
+      border: 3px solid black;
+      text-align: center;
+      animation-name: fade-in;
+      animation-duration: 4s; }
+  
+  }
+
+
+.tituloMultimedia {
+  grid-area: subtitulo;
+  background-color: $color-black;
+  color: whitesmoke;
+  text-align: center;
+  font-size: 20px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.song1 {
+  grid-area: song1;
+  background-color: aqua;
+}
+.song2 {
+  grid-area: song2;
+  background-color: chartreuse;
+}
+.song3 {
+  grid-area: song3;
+  background-color: crimson;
+}
+.song4 {
+  grid-area: song4;
+  background-color: hotpink;
+}
+.song5 {
+  grid-area: song5;
+  background-color: purple;
+}
+
+/*********** MAP GET **************/
+$lyricsEstilo: (borde: 3px solid black, radio: 15px);
+
+.padrelyrics {
+  h3 {
+    border: map-get($lyricsEstilo, borde);
+    border-radius: map-get($lyricsEstilo, radio);
+  }
+}
+
+.padreGrid img:hover {
+  transform: scale(0.9);
+  border: 20px solid black;
+  border-radius: 10px;
+  box-shadow: 4px 4px rgb(199, 81, 81);
+  transition: 1s;
+}
+
+h3 {
+  font-size: 40px;
+}
+
+/* ******* */
+.padreacercad {
+  background-color: rgb(197, 97, 197);
+}
+
+.padreGrid img:hover {
+  transform: scale(0.9);
+  border: 20px solid black;
+  border-radius: 10px;
+  box-shadow: 4px 4px rgb(199, 81, 81);
+  transition: 1s;
+}
+
+p {
+  font-size: 40px;
+}
+
+/* contactanos */
+
+.contactanos {
+  transform: scale(0.9);
+  border: 8px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.form {
+  font-size: 40px;
+}
+
+.gridFooter {
+  bottom: 80px;
+}
